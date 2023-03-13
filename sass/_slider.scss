@@ -1,0 +1,123 @@
+#slider{
+    position: relative;
+    .item{
+        height: 800px;
+        position: relative;
+        &::before{
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            content: '';
+            background-color: rgba(0, 0, 0, 0.63);
+            z-index: 1;
+        }
+        .content{
+            transform: translateY(44px);
+            z-index: 2;
+            position: relative;
+            ul{
+                list-style: none;
+                color: $mainOrange;
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 14px;
+                li{
+                    margin: 0 20px;
+                    line-height: 1;
+                    &:nth-child(2){
+                        position: relative;
+                        &::before, &::after{
+                            position: absolute;
+                            top: -2px;
+                            content: '';
+                            width: 2px;
+                            height: 100%;
+                            background-color: $mainOrange;
+                        }
+                        &::before{
+                            left: -20px;
+                        }
+                        &::after{
+                            right: -20px;
+                        }
+                    }
+                }
+            }
+            h1{
+                font-size: 80px;
+                color: white;
+                letter-spacing: 16px;
+                font-weight: bold;
+                margin: 20px 0;
+            }
+            .btns{
+                a{
+                    text-decoration: none;
+                    display: inline-block;
+                }
+                a.services{
+                    padding: 20px 40px;
+                    background-color: $mainOrange;
+                    color: black;
+                    font-weight: bold;
+                    transition: all .3s ease;
+                    margin-right: 20px;
+                    &:hover{
+                        color: white;
+                        background-color: #1d2122;
+                    }
+                }
+                a.play{
+                    margin-left: 20px;
+                    background-color: rgba(255, 255, 255, 0.1);
+                    width: 64px;
+                    height: 64px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: white;
+                    animation: pulse-animation 2s infinite;
+                    span{
+                        font-size: 50px;
+                    }
+                }
+            }
+        }
+    }
+    .owl-nav{
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        left: 0;
+        top: 50%;
+        transform: translateY(calc(-50% + 24px));
+        z-index: 3;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        button{
+            margin: 0;
+            width: 80px;
+            height: 70px;
+            background-color: rgba(255, 255, 255, 0.2);
+            font-weight: bold;
+            border-radius: 0;
+            transition: all .3s ease;
+            &:hover{
+                background-color: $mainOrange;
+                color: black;
+            }
+        }
+    }
+}
+@keyframes pulse-animation {
+    0% {
+      box-shadow: 0 0 0 0px rgba(255, 255, 255, 0.086);
+    }
+    100% {
+      box-shadow: 0 0 0 15px rgba(246, 0, 0, 0);
+    }
+}

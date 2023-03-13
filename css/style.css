@@ -1,0 +1,17 @@
+header#large-screens {
+  border-bottom: 1px solid black;
+}
+header#large-screens nav ul {
+  list-style: none;
+}
+header#large-screens nav ul li a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+header#large-screens nav ul li a.search span {
+  font-size: 30px;
+}
