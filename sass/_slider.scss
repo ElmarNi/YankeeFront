@@ -3,6 +3,9 @@
     .item{
         height: 800px;
         position: relative;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
         &::before{
             position: absolute;
             left: 0;
@@ -46,7 +49,7 @@
                 }
             }
             h1{
-                font-size: 80px;
+                font-size: 70px;
                 color: white;
                 letter-spacing: 16px;
                 font-weight: bold;
@@ -119,5 +122,56 @@
     }
     100% {
       box-shadow: 0 0 0 15px rgba(246, 0, 0, 0);
+    }
+}
+@media (max-width: 991.98px) { 
+    #slider .item .content h1{
+        font-size: 40px;
+        letter-spacing: normal;
+    }    
+    #slider .item{
+        height: 600px;
+    }
+}
+@media (max-width: 575.98px) { 
+    #slider .item .content h1{
+        font-size: 16px;
+    }   
+    #slider .item .content ul{
+        font-size: 11px;
+    }
+    #slider .owl-nav{
+        display: none;
+    }
+    #slider .item .content .btns a.services{
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+    #slider .item .content .btns a.play{
+        height: 36px;
+        width: 36px;
+    }
+    #slider .item .content ul li:nth-child(2)::before, #slider .item .content ul li:nth-child(2)::after{
+        top: 0;
+    }
+    #slider .item .content .btns a.play span{
+        font-size: 30px;
+    }
+    #slider .item{
+        height: 400px;
+    }
+    header{
+        max-width: calc(100% - 22px);
+        padding: 10px 0 !important;
+    }
+    header#small-screens a{
+        padding: 5px 8px;
+        height: 25px;
+    }
+    header#small-screens a span{
+        font-size: 25px;
+    }
+    header .searchLabel{
+        width: 258px;
     }
 }

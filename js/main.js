@@ -27,3 +27,18 @@ function ClickToSearchIcon(element){
     else element.firstElementChild.innerText = "search"
     element.nextElementSibling.classList.toggle("active")
 }
+
+document.querySelector("header#small-screens a.menu-bar").addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector("header#small-screens nav").classList.add("active")
+
+    let searchIcon = document.querySelector("header#small-screens a.search")
+    if(searchIcon.firstElementChild.innerText.includes("close")) {
+        searchIcon.firstElementChild.innerText = "search"
+        searchIcon.nextElementSibling.classList.remove("active")
+    }
+})
+document.querySelector("header#small-screens nav a.close").addEventListener("click", function(e){
+    e.preventDefault();
+    document.querySelector("header#small-screens nav").classList.remove("active")
+})

@@ -98,6 +98,49 @@ header#small-screens{
     .searchLabel.active{
         bottom: -67px;
     }
+    nav{
+        position: absolute;
+        background-color: #1d2122;
+        top: 0;
+        right: -351px;
+        width: 280px;
+        height: 100vh;
+        padding-top: 20px;
+        transition: all .3s ease;
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li{
+                a{
+                    text-transform: uppercase;
+                    color: white;
+                    display: block;
+                    border-left: 3px solid transparent;
+                }
+                a.active{
+                    background-color: #181a1b;
+                    border-left: 3px solid $mainOrange;
+                }
+            }
+        }
+        .logo, ul li a{
+            padding: 16px 30px;
+        }
+        .logo{
+            a{
+                padding: 0;
+                height: 35px;
+                transform: translateX(10px);
+                span{
+                    color: white;
+                }
+            }
+        }
+    }
+    nav.active{
+        right: -41px;
+    }
 }
 
 @media (min-width: 992px)
