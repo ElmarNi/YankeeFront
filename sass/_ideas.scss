@@ -1,0 +1,45 @@
+#ideas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: #0e5ca63d;
+    background-blend-mode: color;
+    background-attachment: fixed;
+    margin-bottom: 110px;
+    .item{
+        background: #fff;
+        padding: 70px;
+        border-radius: 20px;
+        position: relative;
+        box-shadow: 0 10px 40px -10px rgba(0,64,128,.2);
+        transform: translateY(100px);
+        .heading-row{
+            h1{
+                font-size: 30px;
+            }
+        }
+        .progress-bar-text {
+            font-size: 16px;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+            font-weight: 500;
+        }
+        .progress-bar {
+            background: #e8e8e9 none repeat scroll 0 0;
+            -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+            height: 10px;
+            margin: 0 0 20px;
+            border-radius: 30px;
+            position: relative;
+            width: 100%;
+        }
+        .progress-bar > span {
+            background: #ffaa17 none repeat scroll 0 0;
+            display: block;
+            height: 100%;
+            width: 0;
+            border-radius: 30px;
+        }
+    }
+}

@@ -60,18 +60,6 @@
                     text-decoration: none;
                     display: inline-block;
                 }
-                a.services{
-                    padding: 20px 40px;
-                    background-color: $mainOrange;
-                    color: black;
-                    font-weight: bold;
-                    transition: all .3s ease;
-                    margin-right: 20px;
-                    &:hover{
-                        color: white;
-                        background-color: #1d2122;
-                    }
-                }
                 a.play{
                     margin-left: 20px;
                     background-color: rgba(255, 255, 255, 0.1);
@@ -89,31 +77,29 @@
             }
         }
     }
-    .owl-nav{
+    .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
         position: absolute;
-        margin: 0;
-        width: 100%;
-        left: 0;
         top: 50%;
-        transform: translateY(calc(-50% + 24px));
+        transform: translateY(calc(-50% + 19px));
         z-index: 3;
+        margin: 0;
+        width: 80px;
+        height: 70px;
+        background-color: rgba(255, 255, 255, 0.2);
+        font-weight: bold;
+        border-radius: 0;
+        transition: all .3s ease;
         color: white;
-        display: flex;
-        justify-content: space-between;
-        align-content: center;
-        button{
-            margin: 0;
-            width: 80px;
-            height: 70px;
-            background-color: rgba(255, 255, 255, 0.2);
-            font-weight: bold;
-            border-radius: 0;
-            transition: all .3s ease;
-            &:hover{
-                background-color: $mainOrange;
-                color: black;
-            }
+        &:hover{
+            background-color: $mainOrange;
+            color: black;
         }
+    }
+    .owl-carousel .owl-nav button.owl-next{
+        right: 0;
+    }
+    .owl-carousel .owl-nav button.owl-prev{
+        left: 0;
     }
 }
 @keyframes pulse-animation {
@@ -122,56 +108,5 @@
     }
     100% {
       box-shadow: 0 0 0 15px rgba(246, 0, 0, 0);
-    }
-}
-@media (max-width: 991.98px) { 
-    #slider .item .content h1{
-        font-size: 40px;
-        letter-spacing: normal;
-    }    
-    #slider .item{
-        height: 600px;
-    }
-}
-@media (max-width: 575.98px) { 
-    #slider .item .content h1{
-        font-size: 16px;
-    }   
-    #slider .item .content ul{
-        font-size: 11px;
-    }
-    #slider .owl-nav{
-        display: none;
-    }
-    #slider .item .content .btns a.services{
-        padding: 10px 20px;
-        font-size: 11px;
-    }
-    #slider .item .content .btns a.play{
-        height: 36px;
-        width: 36px;
-    }
-    #slider .item .content ul li:nth-child(2)::before, #slider .item .content ul li:nth-child(2)::after{
-        top: 0;
-    }
-    #slider .item .content .btns a.play span{
-        font-size: 30px;
-    }
-    #slider .item{
-        height: 400px;
-    }
-    header{
-        max-width: calc(100% - 22px);
-        padding: 10px 0 !important;
-    }
-    header#small-screens a{
-        padding: 5px 8px;
-        height: 25px;
-    }
-    header#small-screens a span{
-        font-size: 25px;
-    }
-    header .searchLabel{
-        width: 258px;
     }
 }

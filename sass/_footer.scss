@@ -1,0 +1,36 @@
+footer{
+    .menu{
+        ul{
+            list-style: none;
+        }
+    }
+    .top{
+        padding-bottom: 60px;
+    }
+    p{
+        color: #3e4d68;
+        margin: 0;
+    }
+    .social-icons{
+        ul{
+            list-style: none;
+            li{
+                a{
+                    display: block;
+                    padding: 10px;
+                    img{
+                        width: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .line{
+        position: absolute;
+        height: 1px;
+        background-color: #dee2e6;
+        left: 0;
+        width: 100%;
+        bottom: -30px;
+    }
+}

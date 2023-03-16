@@ -1,0 +1,93 @@
+@media (min-width: 992px)
+{
+    .left-col{
+        width: calc(100% - 231px) !important;
+    }
+    .right-col{
+        width: 231px;
+    }
+}
+@media (max-width: 1200px) {
+    header#large-screens .menu-wrapper a{
+        font-size: 14px;
+        padding: 10px 11px;
+    }
+}
+
+@media (max-width: 991.98px) { 
+    #slider .item .content h1{
+        font-size: 40px;
+        letter-spacing: normal;
+    }    
+    #slider .item{
+        height: 600px;
+    }
+}
+@media (max-width: 767.98px){
+    #projects .menu ul li a{
+        font-size: 13px;
+    }
+}
+@media (max-width: 575.98px) { 
+    #slider .item .content h1{
+        font-size: 16px;
+    }   
+    #slider .item .content ul{
+        font-size: 11px;
+    }
+    #slider .owl-nav{
+        display: none;
+    }
+    #slider .item .content .btns a.services{
+        padding: 10px 20px;
+        font-size: 11px;
+    }
+    #slider .item .content .btns a.play{
+        height: 36px;
+        width: 36px;
+    }
+    #slider .item .content ul li:nth-child(2)::before, #slider .item .content ul li:nth-child(2)::after{
+        top: 0;
+    }
+    #slider .item .content .btns a.play span{
+        font-size: 30px;
+    }
+    #slider .item{
+        height: 400px;
+    }
+    header{
+        max-width: calc(100% - 22px);
+        padding: 10px 0 !important;
+    }
+    header#small-screens a{
+        padding: 5px 8px;
+        height: 25px;
+    }
+    header#small-screens a span{
+        font-size: 25px;
+    }
+    header .searchLabel{
+        width: 258px;
+    }
+    .heading-row p{
+        font-size: 14px;
+    }
+    #ideas .item{
+        padding: 30px;
+    }
+    #ideas .item .heading-row h1{
+        font-size: 20px;
+    }
+    #action .item{
+        padding: 30px;
+    }
+    #action .item h1{
+        font-size: 20px;
+    }
+    #action .item p{
+        font-size: 12px;
+    }
+    #action .item .common-btn{
+        font-size: 14px;
+    }
+}

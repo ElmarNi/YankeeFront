@@ -14,6 +14,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+    <link href="galleryPlugin/simple-lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css">
     <title>Yankee</title>
 </head>
@@ -28,17 +29,19 @@
                         <div class="row align-items-center">
                             <div class="col-4">
                                 <div class="logo ps-3">
-                                    <img src="img/logo.png" alt="logo" class="img-fluid">
+                                    <a href="index.html">
+                                        <img src="img/logo.png" alt="logo" class="img-fluid">
+                                    </a>
                                 </div>
                             </div>
                             <div class="col-6">
                                 <nav>
                                     <ul class="d-flex p-0 m-0 justify-content-center align-items-center">
                                         <li>
-                                            <a href="#">Home</a>
+                                            <a href="index.html" class="active">Home</a>
                                         </li>
                                         <li>
-                                            <a href="#">About Us</a>
+                                            <a href="abouts-us.html">About Us</a>
                                         </li>
                                         <li>
                                             <a href="#">Services</a>
@@ -57,7 +60,8 @@
                                     <div class="searchLabel">
                                         <form class="d-flex">
                                             <input type="text" placeholder="Search your keyword...">
-                                            <button><span class="material-symbols-outlined searchIcon">search</span></button>
+                                            <button><span
+                                                    class="material-symbols-outlined searchIcon">search</span></button>
                                         </form>
                                     </div>
                                 </div>
@@ -85,7 +89,9 @@
             <div class="row align-items-center">
                 <div class="col-6">
                     <div class="logo">
-                        <img src="img/logo.png" alt="logo" class="img-fluid">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo" class="img-fluid">
+                        </a>
                     </div>
                 </div>
                 <div class="col-6 text-end position-relative">
@@ -107,14 +113,16 @@
         </div>
         <nav>
             <div class="logo d-flex align-items-center justify-content-between">
-                <img src="img/logo-white.png" alt="logo" class="img-fluid">
-                <a href="#" class="close"> 
+                <a href="index.html">
+                    <img src="img/logo-white.png" alt="logo" class="img-fluid">
+                </a>
+                <a href="#" class="close">
                     <span class="material-symbols-outlined">close</span>
                 </a>
             </div>
             <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">About us</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="abouts-us.html">About us</a></li>
                 <li><a href="#">services</a></li>
                 <li><a href="#">contact</a></li>
             </ul>
@@ -138,7 +146,7 @@
                     </ul>
                     <h1 class="text-center">DIGITAL AGENCY 1</h1>
                     <div class="btns text-center d-flex justify-content-center align-items-center">
-                        <a href="#" class="services">OUR SERVICES</a>
+                        <a href="#" class="common-btn">OUR SERVICES</a>
                         <a href="#" class="play"><span class="material-symbols-outlined">play_arrow</span></a>
                     </div>
                 </div>
@@ -158,7 +166,7 @@
                     </ul>
                     <h1 class="text-center">DIGITAL AGENCY 2</h1>
                     <div class="btns text-center d-flex justify-content-center align-items-center">
-                        <a href="#" class="services">OUR SERVICES</a>
+                        <a href="#" class="common-btn">OUR SERVICES</a>
                         <a href="#" class="play"><span class="material-symbols-outlined">play_arrow</span></a>
                     </div>
                 </div>
@@ -166,13 +174,295 @@
         </div>
     </section>
 
+    <section id="services">
+        <div class="container">
+            <div class="row heading-row">
+                <h1>Services</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout.</p>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 pb-4">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/app.png" class="img-fluid">
+                        </div>
+                        <div class="heading">
+                            <h1>App <br> Development</h1>
+                        </div>
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 pb-4">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/ux-design.png" class="img-fluid">
+                        </div>
+                        <div class="heading">
+                            <h1>Web <br> Development</h1>
+                        </div>
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 pb-4">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/content.png" class="img-fluid">
+                        </div>
+                        <div class="heading">
+                            <h1>Content <br> Marketing</h1>
+                        </div>
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-3 pb-4">
+                    <div class="item">
+                        <div class="icon">
+                            <img src="img/online-shop.png" class="img-fluid">
+                        </div>
+                        <div class="heading">
+                            <h1>eCommerce <br> Development</h1>
+                        </div>
+                        <div class="content">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ideas" style="background-image: url(img/skill-bg.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
+                    <div class="item">
+                        <div class="heading-row text-start">
+                            <h1>Generating New Ideas. Solving Big Problems</h1>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry standard ever since the when an unknown printer.</p>
+                        </div>
+                        <div class="skill_bar">
+                            <div class="progress-bar-linear">
+                                <p class="progress-bar-text d-flex justify-content-between">
+                                    Web Design
+                                    <span>85%</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <span style="width: 85%;"></span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-linear">
+                                <p class="progress-bar-text d-flex justify-content-between">
+                                    Branding
+                                    <span>70%</span>
+                                </p>
+                                <div class="progress-bar">
+                                    <span style="width: 70%;"></span>
+                                </div>
+                            </div>
+                            <div class="progress-bar-linear">
+                                <p class="progress-bar-text d-flex justify-content-between">
+                                    Mobile App
+                                    <span>60%</span>
+                                </p>
+                                <div class="progress-bar m-0">
+                                    <span style="width: 60%;"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <div class="row heading-row">
+                <h1>Projects</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                    looking at its layout.</p>
+            </div>
+            <div class="row menu mb-4">
+                <div class="col-12">
+                    <ul class="d-flex justify-content-center align-items-center flex-wrap p-0 m-0">
+                        <li><a href="#" data-id="0" class="active">All</a></li>
+                        <li><a href="#" data-id="1">Branding</a></li>
+                        <li><a href="#" data-id="2">Web Template</a></li>
+                        <li><a href="#" data-id="3">SEO</a></li>
+                        <li><a href="#" data-id="4">Digital Marketing</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row gallery">
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="2">
+                        <a href="img/1.jpg" class="big" rel="rel1">
+                            <img src="img/1.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="3">
+                        <a href="img/2.jpg" class="big" rel="rel1">
+                            <img src="img/2.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="1">
+                        <a href="img/3.jpg" class="big" rel="rel1">
+                            <img src="img/3.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="1">
+                        <a href="img/4.jpg" class="big" rel="rel1">
+                            <img src="img/4.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="4">
+                        <a href="img/5.jpg" class="big" rel="rel1">
+                            <img src="img/5.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-lg-4 pb-4">
+                    <div class="item" data-id="2">
+                        <a href="img/1.jpg" class="big" rel="rel1">
+                            <img src="img/1.jpg" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="action">
+        <div class="container">
+            <div class="item">
+                <div class="row align-items-center">
+                    <div class="col-md-8 text-center text-md-start left">
+                        <h1>Want to Hire Resources to Work With You?</h1>
+                        <p>Web design app development for Android & iOS. We have over 5 years of experience in helping
+                            companies.</p>
+                        <a href="#" class="common-btn">OUR SERVICES</a>
+                    </div>
+                    <div class="col-md-4 d-none d-md-block text-end right">
+                        <img src="img/app-mockup-2.svg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="partners" class="px-3 px-sm-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <img src="img/aspire-soft-tech.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/fino-finance.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/indowind.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/lyka-pub.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/manu-sunrise.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/logo.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/app-mockup-2.svg" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/app.png" alt="">
+                        </div>
+                        <div class="item">
+                            <img src="img/content.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="row align-items-center top">
+                <div class="col-md-3 d-none d-md-block">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="logo" class="img-fluid">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-9 d-none d-md-block">
+                    <div class="menu">
+                        <ul class="p-0 m-0 d-flex align-items-center justify-content-end w-100">
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="abouts-us.html">About us</a></li>
+                            <li><a href="#">services</a></li>
+                            <li><a href="#" class="pe-0">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="position-relative">
+                        <div class="line"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center pb-4">
+                <div class="col-md-6">
+                    <p>© 2022 All Rights Reserved By Separateweb</p>
+                </div>
+                <div class="col-md-6 social-icons">
+                    <ul class="p-0 m-0 d-flex justify-content-center justify-content-md-end align-items-center">
+                        <li><a href="#"><img src="img/twitter.png"></a></li>
+                        <li><a href="#"><img src="img/facebook-app-symbol.png"></a></li>
+                        <li><a href="#"><img src="img/youtube.png"></a></li>
+                        <li><a href="#"><img src="img/instagram.png"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"
         integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="owlcarousel/owl.carousel.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="galleryPlugin/simple-lightbox.min.js"></script>
+    <script src="galleryPlugin/simple-lightbox.legacy.min.js"></script>
+    <script src="js/main.js" type="module"></script>
 </body>
 
 </html>

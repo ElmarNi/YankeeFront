@@ -1,0 +1,23 @@
+#action{
+    .item{
+        background: linear-gradient(225deg, #fe7649 0%, #ff2938 100%);
+        padding: 40px;
+        border-radius: 16px;
+        h1, p{
+            color: white;
+            margin: 0;
+        }
+        h1{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        p{
+            margin: 20px 0;
+        }
+        .common-btn{
+            border-radius: 6px;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+}
