@@ -22,6 +22,12 @@
     #slider .item{
         height: 600px;
     }
+    #servicesMainPage .left ul li a{
+        font-size: 16px;
+    }
+    #servicesMainPage .right ul li a{
+        font-size: 14px;
+    }
 }
 @media (max-width: 767.98px){
     #projects .menu ul li a{
@@ -88,6 +94,19 @@
         font-size: 12px;
     }
     #action .item .common-btn{
+        font-size: 14px;
+    }
+    #servicesMainPage .right h1{
+        font-size: 20px;
+    }
+    #servicesMainPage .right p{
+        font-size: 14px;
+    }
+    #servicesMainPage .right ul li a{
+        font-size: 12px;
+    }
+    #breadcrumb p{
+        max-width: 100%;
         font-size: 14px;
     }
 }

@@ -74,6 +74,44 @@ body.active {
   transform: translateY(42px);
 }
 
+.preloader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+
+#goToUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  border: 1px solid #ffaa17;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  transition: all 0.3s ease;
+  opacity: 0;
+  visibility: hidden;
+}
+#goToUp img {
+  width: 20px;
+}
+
+#goToUp.active {
+  opacity: 1;
+  visibility: visible;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -510,6 +548,89 @@ header#large-screens .menu-wrapper a.active, footer .menu a.active {
   margin: 0;
 }
 
+#servicesMainPage {
+  padding: 60px 0;
+  background: #f6f7ff;
+  margin-bottom: 30px;
+}
+#servicesMainPage ul {
+  list-style: none;
+}
+#servicesMainPage ul li a {
+  color: black;
+  text-decoration: none;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+}
+#servicesMainPage .left ul li a {
+  display: block;
+  font-size: 18px;
+  padding: 15px 20px;
+  color: #3e4d68;
+  margin: 16px 0;
+  transition: all 0.3s ease;
+}
+#servicesMainPage .left ul li a:hover {
+  background: #ffaa17;
+  color: white;
+}
+#servicesMainPage .left ul li a.active {
+  background: #ffaa17;
+  color: white;
+}
+#servicesMainPage .right .item {
+  padding: 30px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  padding-bottom: 20px;
+}
+#servicesMainPage .right .item.active {
+  visibility: visible;
+  opacity: 1;
+}
+#servicesMainPage .right h1 {
+  margin: 0;
+}
+#servicesMainPage .right p {
+  margin: 16px 0;
+}
+#servicesMainPage .right ul li a {
+  display: block;
+  padding: 10px 20px;
+  margin-right: 17px;
+  margin-bottom: 7px;
+  position: relative;
+  font-size: 14px;
+}
+#servicesMainPage .right ul li a::before {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  border-radius: 100%;
+  border: 1px solid black;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  left: 0;
+}
+#servicesMainPage .right img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  border-radius: 16px;
+}
+
+#error {
+  padding: 60px 0;
+}
+#error h1 {
+  font-weight: bold;
+}
+
 footer .menu ul {
   list-style: none;
 }
@@ -560,6 +681,12 @@ footer .line {
   }
   #slider .item {
     height: 600px;
+  }
+  #servicesMainPage .left ul li a {
+    font-size: 16px;
+  }
+  #servicesMainPage .right ul li a {
+    font-size: 14px;
   }
 }
 @media (max-width: 767.98px) {
@@ -627,6 +754,19 @@ footer .line {
     font-size: 12px;
   }
   #action .item .common-btn {
+    font-size: 14px;
+  }
+  #servicesMainPage .right h1 {
+    font-size: 20px;
+  }
+  #servicesMainPage .right p {
+    font-size: 14px;
+  }
+  #servicesMainPage .right ul li a {
+    font-size: 12px;
+  }
+  #breadcrumb p {
+    max-width: 100%;
     font-size: 14px;
   }
 }
