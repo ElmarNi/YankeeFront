@@ -42,7 +42,7 @@ body {
         color: #747474;
     }
 }
-a.common-btn{
+.common-btn{
     padding: 20px 40px;
     background-color: $mainOrange;
     color: black;
@@ -127,5 +127,6 @@ body.active{
 @import "partners";
 @import "servicesMainPage";
 @import "error";
+@import "contact";
 @import "footer";
 @import "breakpoints"

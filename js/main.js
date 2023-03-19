@@ -79,6 +79,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
         document.querySelector("body").classList.add("active")
     })
+
     document.querySelector("header#small-screens nav a.close").addEventListener("click", function(e){
         e.preventDefault();
         document.querySelector("header#small-screens nav").classList.remove("active")
@@ -104,10 +105,12 @@ document.addEventListener("DOMContentLoaded", () => {
             })
         })
     });
+
     document.addEventListener("scroll", function(e){
         if (window.scrollY > 200) document.querySelector("#goToUp").classList.add("active")
         else document.querySelector("#goToUp").classList.remove("active")
     })
+
     document.querySelectorAll("#servicesMainPage .left a").forEach(element => {
         element.addEventListener("click", function(e){
             e.preventDefault();
@@ -131,13 +134,19 @@ document.addEventListener("DOMContentLoaded", () => {
     })
 
     window.addEventListener("click", function(e){
-        console.log(e.target);
         if(e.target != document.querySelector("nav.active") 
             && e.target != document.querySelector("nav.active .logo img") 
             && e.target != document.querySelector(".menu-bar span")){
 
             document.querySelector("header#small-screens nav").classList.remove("active")
             document.querySelector("body").classList.remove("active")
+        }
+
+        if(document.querySelector("#contact") != null){
+            document.querySelectorAll("#contact .item input").forEach(input => {
+                inputOutFocus(input, e)
+            });
+            inputOutFocus(document.querySelector("#contact #message"), e)
         }
     })
 
