@@ -127,11 +127,14 @@ document.addEventListener("DOMContentLoaded", () => {
     window.addEventListener("resize", function(e){
         setHeightForServiceDiv()
     })
-
-    document.querySelector(".searchLabel form button").addEventListener("click", function(e){
-        e.preventDefault()
-        window.location.pathname = "/error.html"
-    })
+    
+    document.querySelectorAll(".searchLabel form button").forEach(element => {
+        element.addEventListener("click", function(e){
+            e.preventDefault()
+            window.location.pathname = "/error.html"
+            console.log("test");
+        })
+    });
 
     window.addEventListener("click", function(e){
         if(e.target != document.querySelector("nav.active") 
